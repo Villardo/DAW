@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Acciones por defecto.</title>
+</head>
+
+<body>
+    <a href="http://www.ciclosmontecastelo.com/">Ciclos Montecastelo</a>
+    <script>
+        let link = document.querySelector("a");
+        link.addEventListener("click", event => {
+            console.log("No.");
+            event.preventDefault(); // evita que se prosiga con la acción por defecto del evento (abrir el enlace)
+        });
+    </script>
+</body>
+
+</html>

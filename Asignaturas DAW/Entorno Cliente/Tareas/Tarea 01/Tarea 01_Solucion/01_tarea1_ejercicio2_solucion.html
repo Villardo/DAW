@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 2.</title>
+</head>
+
+<body>
+    <script>
+        console.log("DADOS IGUALES");
+        var respuesta = prompt("Introduzca un número de dados");
+        var numDados = new Number(respuesta);
+        console.log("Número de dados: " + numDados);
+        if (numDados <= 1) {
+            console.log("Imposible!");
+        } else {
+            // Se realizan las tiradas de dados:
+            var tiradas = [];
+            var dado;
+            for (var i = 0; i < numDados; i++) {
+                dado = Math.ceil(Math.random() * 6);
+                tiradas.push(dado);
+            }
+            // Se genera la cadena con los dados de la tirada:
+            var cadenaDados = tiradas.join(" ");
+            
+            // Se comprueba si algún dado está repetido comparándolo con el anterior:
+            // (nótese que se empieza en el segundo dado (i=1) para comparar con el primero)
+            var repetido = false;
+            for (var i = 1; i < numDados; i++) {
+                if (tiradas[i] == tiradas[i - 1]) {
+                    repetido = true;
+                    break;
+                }
+            }
+            // Se escribe el resultado:
+            console.log("Dados: " + cadenaDados);
+            if (!repetido) {
+                console.log("El jugador ha ganado");
+            } else {
+                console.log("El jugador ha perdido");
+            }
+        }      
+    </script>
+</body>
+
+</html>

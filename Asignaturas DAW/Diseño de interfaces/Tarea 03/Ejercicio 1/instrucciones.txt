@@ -1,0 +1,19 @@
+En caso de que quieras recrear el archivo css:
+He utilizado la extension "Live Sass Compiler" de Visual Studio Code, para poder definirle la ruta, 
+hay que incluir lo siguiente en el archivo settings.json.
+
+    "liveSassCompile.settings.formats":[
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+
+        "**/node_modules/**",
+        ".vscode/**"
+    ]
+
+
+https://i.imgur.com/hKog39o.png

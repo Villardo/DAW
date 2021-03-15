@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Funciones anónimas </title>
+</head>
+
+<body>
+    <script>
+        // FUNCIONES FLECHA: emplean una flecha (=>) en lugar de la palabra reservada 'function'
+        // La flecha (=>) se sitúa entre los parámetros y el cuerpo de la función
+        // Simboliza que a partir de una entrada (los parámetros) se genera una salida (el cuerpo de la función)
+        const potencia = (base, exp) => {
+            let resultado = 1;
+            for (let cuenta = 0; cuenta < exp; cuenta++) {
+                resultado *= base;
+            }
+            return resultado;
+        };
+
+        
+        const cuadrado1 = (x) => { return x * x; };
+        // Si la función solamente tiene un parámetro, los paréntesis son opcinales
+        // Si el cuerpo de la función solamente tiene una expresión, la función devolverá automáticamente su resultado
+        const cuadrado2 = x => x * x;
+
+        // Si la función no tiene parámetros, los paréntesis debe figurar vacíos
+        const aviso = () => {
+            console.log("¡Avisado!");
+        }
+
+        console.log("2 elevado a 3 = " + potencia(2,3));
+        console.log("2 al cuadrado = " + cuadrado1(2));
+        console.log("También 2 al cuadrado = " + cuadrado2(2));
+        aviso();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>JSON</title>
+    <script>
+        // El objeto JSON ofrece métodos para manejar datos en formato JSON
+        
+        // .stringify() --> conversión de objeto de JavaScript a cadena JSON
+        let unObjeto = { clave1: "un texto", clave2: true, clave3: 5 };
+        let unObjetoComoCadena = JSON.stringify(unObjeto); // Devuelve la cadena "{"clave1":"un texto","clave2":true,"clave3":5}"  
+        typeof (unObjetoComoCadena); // Devuelve "string"
+        console.log("La cadena devuelta por .stringify(): ", unObjetoComoCadena);
+
+        // .parse() --> conversión de cadena JSON a objeto de JavaScript
+        let otroObjeto = JSON.parse(unObjetoComoCadena); // Devuelve el objeto {clave1: "un texto", clave2: true, clave3: 5} 
+        typeof (otroObjeto); // Devuelve "object"
+        console.log("El objeto devuelto por .parse(): ", otroObjeto)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

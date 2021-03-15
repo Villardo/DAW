@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 4.</title>
+    <script src="01_objetos.js"></script>
+</head>
+
+<body>
+    <strong id="peliculas">Películas publicadas antes del año 2000:</strong>
+    <p id="peliculas2000"></p><br><br>
+
+    <strong id="lista">Lista de actores</strong>
+    <p id="listadoActores"></p><br><br>
+
+    <p><strong id="number">El valor de la propiedad number es:</strong><span id="numero"></span></p>
+
+    <script>
+        let actores=[], peliculas=[], cont=0;
+
+        function datosPeliculas() {
+            let pelicula,pPeli,pPeliTexto,pPeliculas2000;
+            
+            peliculas =Object.getOwnPropertyNames(movies);             
+            
+            for (pelicula in movies) {                            
+
+                if (movies[pelicula].releaseDate < 2000) {        
+                    pPeli= document.createElement("p");
+                    pPeliTexto = document.createTextNode(peliculas[cont]);
+                    pPeli.appendChild(pPeliTexto)                                
+                    pPeliculas2000 = document.getElementById("peliculas2000").appendChild(pPeli); 
+                }
+                
+                for (let i = 0; i < movies[pelicula].actors.length; i++) {
+                    if (!actores.includes(movies[pelicula].actors[i])) {
+                        actores.push(movies[pelicula].actors[i]);                    
+                    }
+                }
+                cont++;  
+            }            
+        }
+
+        
+        function lista(){
+            let pActor, pTexto, pBase;
+
+            for (let i = 0; i < actores.length; i++) {
+                pActor= document.createElement("p");
+                pTexto = document.createTextNode(actores[i]);
+                pActor.appendChild(pTexto)                                
+                pBase = document.getElementById("listadoActores").appendChild(pActor);                 
+            }
+        }
+
+        function valorNumber() {
+            console.log(myObject["some array"][2].number); 
+            document.getElementById("numero").innerHTML= myObject["some array"][2].number;          
+        }
+
+        datosPeliculas();
+        lista();
+        valorNumber();
+    </script>    
+    
+</body>
+
+</html>

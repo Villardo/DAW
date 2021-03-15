@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campos checkbox y radio</title>
+</head>
+
+<body>
+    <input type="text"> longitud: <span id="length">0</span><br><br>
+    <textarea></textarea>
+    <script>
+        let text = document.querySelector("input");
+        let output = document.querySelector("#length");
+        text.addEventListener("input", () => {
+            output.textContent = text.value.length;
+        });
+        let textArea = document.querySelector("textarea");
+        textArea.value = "Hola mundo";
+    </script>
+</body>
+
+</html>

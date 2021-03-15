@@ -1,0 +1,17 @@
+body {
+  background-color: #fff;
+  color: #000;
+  font-size: 1.2em;
+}
+.fab {
+  color: #1c2017;
+}
+.fas {
+  color: #1c2017;
+}
+.ulListas {
+  list-style: none;
+}
+.enlacePaginas:hover {
+  background-color: #35c409;
+}

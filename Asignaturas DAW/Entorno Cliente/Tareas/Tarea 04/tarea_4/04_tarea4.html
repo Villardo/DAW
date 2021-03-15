@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Countries</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="jquery-selectors.css" />
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="04_tarea4_jquery.js"></script>
+</head>
+
+<body>
+	<div id="web">
+
+		<div id="content">
+			<div id="config" class="section-wrapper corner-all">
+				<h2>Countries</h2>
+				<div class="search">
+					<form action="#" method="get">
+						<input type="image" src="iSearch.gif" alt="Buscar" />
+						<input name="q" class="q" />
+					</form>
+				</div>
+
+				<div class="continent" id="Europe">
+				<h3>
+						<span class="editable">Europe</span>
+						<a href="#" class="reload icon inline-block" title="Reload"></a>
+						<a href="#" class="remove icon inline-block" title="Remove"></a>
+					</h3>
+
+					<div class="innerbox">
+						<div class="content">
+							<ul class="nodeList">
+								<li class="node odd">
+									<ul class="countryList left">
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Albania</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Andorra</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Armenia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Austria</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Azerbaijan</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Belarus</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Belgium</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Bosnia &amp; Herzegovina</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Bulgaria</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Croatia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Cyprus</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Czech Republic</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Denmark</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Estonia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Finland</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">France</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Georgia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Germany</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Greece</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Hungary</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Iceland</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Ireland</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Italy</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Ireland</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Kosovo</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Latvia</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Liechtenstein</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Lithuania</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Luxembourg</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Macedonia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Malta</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Moldava</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Monaco</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Montenegro</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">The Nederlands</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Norway</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Poland</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Portugal</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Romania</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Russia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">San Marino</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Serbia</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Slovakia</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Slovenia</a>
+										</li>
+										<li class="country inline-block" id="Spain">
+											<a href="#" class="inline-block">Spain</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Sweden</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Switzerland</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Turkey</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Ukraine</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">United Kingdom</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Vatican City</a>
+										</li>
+									</ul>
+									<div style="clear:both"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="continent" id="NorthAmerica">
+					<h3>
+						<span class="editable">North America</span>
+						<a href="#" class="reload icon inline-block" title="Reload"></a>
+						<a href="#" class="remove icon inline-block" title="Remove"></a>
+					</h3>
+					<div class="innerbox">
+						<div class="content">
+							<ul class="nodeList">
+								<li class="node odd">
+									<ul class="countryList left">
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Antigua &amp; Barbuda</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Bahamas</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Barbados</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Belize</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Canada</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Costa Rica</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Cuba</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Dominica</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Dominican Republic</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">El Salvador</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Grenada</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Guatemala</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Haiti</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">Honduras</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Jamaica</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Mexico</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Nicaragua</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Panama</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">St. Kitts &amp; Nevis</a>
+										</li>
+										<li class="country inline-block">
+											<a href="#" class="inline-block">St. Lucia</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">St. Vincent &amp; The Grenadines</a>
+										</li>
+										<li class="country inline-block enabled">
+											<a href="#" class="inline-block">Trinidad &amp; Tobago</a>
+										</li>
+										<li class="country inline-block" id="USA">
+											<a href="#" class="inline-block">United States of America</a>
+										</li>
+									</ul>
+									<div style="clear:both"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

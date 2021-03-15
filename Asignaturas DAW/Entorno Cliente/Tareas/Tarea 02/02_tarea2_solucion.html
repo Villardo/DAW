@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 2</title>
+    <script src="02_cumbres.js"></script>
+    <script src="02_tarea.js"></script>
+</head>
+
+<body>
+    <!-- Ejercicio 1 -->
+
+    <h1>Apartado 1</h1>
+    <hr>
+    <section class="sol1">
+        <h2><span class="color_submarino">Yellow</span> submarine de The Beatles (publicada en Revolver, 1966)</h2>
+        <p>We all live in a <span class="color_submarino">yellow</span> submarine... <span
+                class="color_submarino">yellow</span> submarine, <span class="color_submarino">yellow</span> submarine
+        </p>
+        <label for="txtCambio">Cambia el color del submarino a:</label>
+        <input type="text" id="txtColor">
+        <button type="button" id="btnColor" onclick="ejerc1()" >Cambiar</button>
+    </section>
+
+    <!-- Ejercicio 2 -->
+
+    <h1>Apartado 2</h1>
+    <hr>
+    <section id="sol2">
+        <h4 id="heaCumbres" onclick="ejerc2()">Pulse para ver las cumbres más altas del planeta</h4>
+        <div id="cumbres"></div>
+    </section>
+
+
+    <!-- Ejercicio 3 -->
+
+    <h1>Apartado 3</h1>
+    <hr>
+    <section id="sol3">
+        <input type="text" id="txtAnadir">
+        <button type="button" id="btnAnadir" onclick="ejerc3anadir">Añadir</button> <br><br>
+        <input type="text" id="txtBorrar">
+        <button type="button" id="btnBorrar" onclick="ejerc3borrar">Borrar</button>
+        <section>
+            <h4>Lista de actividades:</h4>
+            <ul id="listaActividades">
+                <li>Hacer la compra</li>
+            </ul>
+        </section>
+
+    </section>
+
+    <!-- Ejercicio 4 -->
+
+    <h1>Apartado 4</h1>
+    <hr>
+    <section id="sol4">
+        <p>1 euros equivale a <span>1.12</span> dóllares estadounidenses</p>
+        <div id="time"></div>
+        <input type="text" id="txtEuro" value="1"> <label for="txtEuro">euros</label><br><br>
+        <input type="text" id="txtDolar" value="1.12"> <label for="txtDolar">dóllares</label><br><br>
+    </section>
+    
+</body>
+
+</html>

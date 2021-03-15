@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 2.</title>
+</head>
+
+<body>
+    <script>        
+        let distinto, infoDados="";
+
+        function aleatorio() {
+            return Math.floor(Math.random() * (7 - 1) + 1);
+        }
+
+        function juego() {
+            let numeroDados=prompt("¿Cuantos dados quiere tirar?");
+
+            console.log("DADOS IGUALES");
+            console.log("Número de dados: "+numeroDados);
+            for (let i = 0; i < numeroDados; i++) {
+                infoDados += aleatorio(i)+" ";                
+            }
+            
+            if (numeroDados<=1) {
+                console.log("¡Imposible!");
+            }else{                
+                console.log("Dados: "+infoDados);
+                distinto=true;
+
+                let a=(infoDados.trim().split(" "));
+                
+                for (let i=0; i < a.length-1; i++)
+                {
+                    if (!((a[i])!=(a[i+1]))) {
+                        distinto=false;                        
+                    }                    
+                }
+                if (distinto) {                    
+                    console.log("El jugador ha ganado");
+                }else
+                    console.log("El jugador ha perdido");
+            }
+            console.log("----------------------");
+            infoDados="";
+        }
+        </script>
+    <button onclick="juego()">Jugar</button>
+</body>
+
+</html>

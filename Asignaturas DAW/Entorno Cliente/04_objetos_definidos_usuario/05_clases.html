@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clases</title>
+</head>
+
+<body>
+    <p id="car1"></p>
+    <p id="car2"></p>
+    <p id="car3"></p>
+    <script>
+        /*
+        Se puede crear una clase con la palabra reservada class,
+        asignando las propiedades dentro de un método llamando constructor()
+        
+        Cualquier clase tiene que estar declarada antes de usarse
+       */
+
+        class Car {
+            constructor(brand) {
+                // se crea una propiedad
+                this._carname = brand;
+            }
+            // Un método
+            present() {
+                return "I have a " + this.carname;
+            }
+
+            // métodos get / set para la propiedad
+            get carname() {
+                return this._carname;
+            }
+            set carname(x) {
+                this._carname = x;
+            }
+            /*
+            se utiliza habitualmente un guión bajo como notación para indicar que la propiedad es privada
+            así se distingue la propiedad del método getter / setter
+            */
+
+            // Método estático (solamente se puede invocar sobre la clase, no sobre una instancia)
+            static hello() {
+                return "Hello!!";
+            }
+        }
+
+        // Herencia: se genera una subclase con la palabra reservada extends
+        class Model extends Car {
+            constructor(brand, mod) {
+                super(brand);
+                this.model = mod;
+            }
+            show() {
+                return this.present() + ', it is a ' + this.model;
+            }
+        }
+
+
+        let mycar = new Car("Ford");
+        document.getElementById("car1").innerHTML = mycar.present();
+
+        mycar = new Model("Ford", "Mustang");
+        document.getElementById("car2").innerHTML = mycar.show();
+
+        mycar = new Car("Ford");
+        mycar.carname = "Volvo"; // sin guión bajo
+        document.getElementById("car3").innerHTML = mycar.carname;
+    </script>
+</body>
+
+</html>

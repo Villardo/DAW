@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 1.</title>
+</head>
+
+<body>
+    <script>
+        console.log("JUEGO DEL QUINCE");
+
+        var carta1 = Math.ceil(Math.random() * 10);
+        var carta2 = Math.ceil(Math.random() * 10);
+        var carta3 = Math.ceil(Math.random() * 10);
+        var ptosGloria = carta1 + carta2 + carta3;
+        var cadena = "Gloria ha sacado un " + carta1 + ", un " + carta2 + " y un " + carta3 + ". Suma " + ptosGloria + ".";
+        if (ptosGloria > 15)
+        cadena += " Se ha pasado."
+        console.log(cadena);
+        
+
+        carta1 = Math.ceil(Math.random() * 10);
+        carta2 = Math.ceil(Math.random() * 10);
+        carta3 = Math.ceil(Math.random() * 10);
+        var ptosHector = carta1 + carta2 + carta3;
+        cadena = "Héctor ha sacado un " + carta1 + ", un " + carta2 + " y un " + carta3 + ". Suma " + ptosHector + ".";
+        if (ptosHector > 15)
+        cadena += " Se ha pasado."
+        console.log(cadena);
+
+        if ((ptosGloria > 15) && (ptosHector > 15)) {
+            console.log("No ha ganado nadie");
+        } else if (ptosGloria > 15) {
+            console.log("Ha ganado Héctor");
+        } else if (ptosHector > 15) {
+            console.log("Ha ganado Gloria");
+        }else if (ptosGloria == ptosHector) {
+            console.log("Han empatado");
+        } else if (ptosGloria > ptosHector) {
+            console.log("Ha ganado Gloria");
+        } else console.log("Ha ganado Héctor");
+    </script>
+</body>
+
+</html>

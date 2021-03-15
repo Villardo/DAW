@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campos file</title>
+</head>
+
+<body>
+    Seleccion un archivo: <input type="file">
+    <script>
+        let input = document.querySelector("input");
+        input.addEventListener("change", () => {
+            if (input.files.length > 0) {
+                let file = input.files[0];
+                console.log("Has seleccionado el archivo", file.name);
+                if (file.type) console.log("Es de tipo", file.type);
+            }
+        });
+    </script>
+</body>
+
+</html>

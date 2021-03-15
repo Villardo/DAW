@@ -1,0 +1,48 @@
+.multimedia {
+  max-width: 100%;
+}
+#playlist,
+audio {
+  width: 100%;
+  padding: 10px;
+  list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  color: #555555;
+  text-decoration: none;
+}
+.active a {
+  color: #0918e0;
+  text-decoration: none;
+}
+li a {
+  background-color: #ffffff;
+  padding: 5px;
+  display: block;
+  color: black;
+}
+li a:hover {
+  color: #0059ff;
+  text-decoration: none;
+}
+#video {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+#multimedia {
+  background-color: #ffffff;
+  padding-top: 15px;
+}
+#contenedordb {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body {
+  background-color: #38b3b3;
+}
+body #contenedor {
+  background-color: #38b3b3;
+}

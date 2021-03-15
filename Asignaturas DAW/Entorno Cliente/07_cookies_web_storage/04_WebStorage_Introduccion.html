@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>WebStorage - Ejemplo completo</title>
+
+</head>
+
+<body>
+    <script>
+        if (typeof (Storage) !== "undefined") {
+            alert("El navegador soporta Web Storage");
+            // window.localStorage: almacena datos SIN fecha de expiración
+            // Crear un element (siempre son cadenas)
+            localStorage.setItem("nombre", "Ada"); // PREFERIBLE este método de acceder por compatibilidad con navegadores
+            localStorage.apellido = "Lovelave"; // mejor acceder con setItem
+
+            // Consultar un elemento
+            alert(localStorage.getItem("nombre"));// PREFERIBLE
+            alert(localStorage.apellido); // mejor acceder con setItem
+
+            // Borrar un elemento
+            localStorage.removeItem("apellido");
+            alert(localStorage.getItem("nombre") + " "  + localStorage.getItem("apellido"));
+
+            // Borrar todos los elementos
+            localStorage.clear();
+            alert(localStorage.getItem("nombre") + " " + localStorage.getItem("apellido"));
+
+            // window.sessionStorage: almacena los datos durante una sesión
+            // si se cierra la ventana o el navegador, desaparecen
+        } else {
+            alert("El navegador NO soporta Web Storage");
+        }
+    </script>
+</body>
+
+</html>

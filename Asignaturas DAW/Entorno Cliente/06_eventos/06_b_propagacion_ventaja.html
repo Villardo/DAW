@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Propagación.</title>
+</head>
+
+<body>
+    <button>A</button>
+    <button>B</button>
+    <button>C</button>
+    <script>
+        /*
+        Se pueden atender todos los eventos del body y su contenido en un único manejador.
+        De este modo se puede evitar establecer un manejador par acada botón.
+        */
+        document.body.addEventListener("click", event => {
+            if (event.target.nodeName == "BUTTON") {
+                console.log("¡Pulsado!", event.target.textContent);
+            } else console.log("Pulsado el body fuera de los botones");
+        });
+    </script>
+</body>
+
+</html>

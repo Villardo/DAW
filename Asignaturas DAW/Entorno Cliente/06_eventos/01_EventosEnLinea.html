@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Modelo de registro de eventos en línea</title>
+</head>
+
+<body onload="alert('La página se ha cargado correctamente')">
+    <h1>Modelo de registro de eventos en línea</h1>
+    <!-- Cada elemento HTML tiene sus posibles eventos como propiedades: puede tener un evento de cada tipo.
+    El nombre del evento es "on" seguido del nombre de la acción-->
+
+    <!--Manejadores como atributo de una etiqueta HTML-->
+    <h3 id="cab1" onclick="this.innerHTML='Javascript en HTML'" onmouseover="this.style.background='red'" onmouseout="this.style.background='white'">Pulsa aquí para ver lo que se ejecuta</h3>
+    <!-- h3 id="cab1" onclick="document.getElementById("cab1").innerHTML="...">...</h3> -->
+
+    <!-- Manejadores como funciones externas -->
+    <h3 onclick="cambiar(this)">Pulsa aquí para ver qué se ejecuta</h3>
+    <script>
+        function cambiar(elem) {
+            elem.innerHTML = "Javascript en HTML y función externa";
+        }
+    </script>
+
+    <!-- Hay acciones que desencadenan varios eventos. Ej. submit desencadena onmousedown, onclick, onmouseup, onsubmit.
+    Para evitar que el navegador ejecute la acción por defecto necesitamos añadir "return false;" -->
+    <a href="http://www.google.com" onclick="alertar(); return false;">Pulsa aquí para ver qué se ejecuta</a>
+    <script>
+        function alertar() {
+            alert("Vamos a Google");
+        }
+    </script>
+    <br/>
+    <a href="http://www.google.com" onclick="return preguntar();">Pulsa aquí para ver qué se ejecuta</a>
+    <script>
+        function preguntar() {
+            return confirm("¿Deseas ir a Google?");
+        }
+    </script>
+
+</body>
+
+</html>

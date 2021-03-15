@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 3</title>
+    <script src="03_validacion.js"></script>
+    <style>
+        #errores {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <form method="POST">
+            <label>Nombre <br><input type="text" id="txtNombre"></label><br><br>
+            <label>Edad <br><input type="number" id="txtEdad"></label><br><br>
+            <label>Contraseña <br><input type="password" id="txtPass1"></label><br><br>
+            <label>Confirmar contraseña <br><input type="password" id="txtPass2"></label><br><br>
+            <label>NIF <br><input type="text" id="txtNIF"></label><br><br>
+            <label>Email <br><input type="email" id="txtEmail" ></label><br><br>
+
+            Seleccione su género <br>
+            <input type="radio" name="genero" value="feme">Femenino
+            <input type="radio" name="genero" value="masc">Masculino<br><br>
+            
+            <label>Teléfono <br><input type="text" id="txtTelf"></label><br><br>
+            
+            Seleccione sus intereses <br>
+            <input type="checkbox" name="intereses" value="libr">Libros
+            <input type="checkbox" name="intereses" value="peli">Películas
+            <input type="checkbox" name="intereses" value="inte">Internet <br><br>
+
+            Seleccione al menos dos frutas, pero no más de tres <br>
+            (puede utilizar la tecla 'Control' para seleccionar varias frutas) <br>
+            <select name="frutas" id="frutas" multiple>
+                <option value="manz">Manzana</option>
+                <option value="nara">Naranja</option>
+                <option value="plat">Plátano</option>
+                <option value="melo">Melocotón</option>
+                <option value="mang">Mango</option>
+                <option value="papa">Papaya</option>
+                <option value="uvas">Uvas</option>
+            </select><br><br>
+
+            <input type="checkbox" id="chkPrivacidad">Acepte nuestra política de privacidad <br><br>
+
+            <button type="submit" id="btnEnviar">Enviar</button>
+        </form>
+        <div id="errores"></div>
+        <div id="intentos"></div>
+    </main>
+
+</body>
+
+</html>

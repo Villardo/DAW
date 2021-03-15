@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ámbito de variables.</title>
+</head>
+
+<body>
+    <script>
+        // var: variable global
+        var i = "global";
+        function foo1() {
+            i = "local";
+            console.log(i); // local
+        }
+        foo1();
+        console.log(i); // local
+
+        // var: variable global y variable local para función
+        var i = "global";
+        function foo2() {
+            var i = "local"; // Otra variable local solo para esta función
+            console.log(i); // local
+        }
+        foo2();
+        console.log(i); // global
+
+        // var: variable local para función
+        function foo3() {
+            var i = "local";
+        }
+        console.log(i); // i no está definida
+
+        // let: variable global y variable local para función 
+        let i = 0;  // variable global
+        function foo4() {
+            i = 1;
+            let j = 2; // variable local
+            if (true) {
+                console.log(i); // 1
+                console.log(j); // 2
+            }
+        }
+        foo4();
+
+        // let: variable local para función y variable local para bloque
+        function foo5() {
+            let i = 0;
+            if (true) {
+                let i = 1; // Sería otra variable i solo para el bloque if
+                console.log(i); // 1
+            }
+            console.log(i); // 0
+        }
+        foo5();
+
+        // let: variable local para bloque
+        function foo6() {
+            if (true) {
+                let i = 1;
+            }
+            console.log(i); // i no está definida
+        }
+        foo6();
+
+        // const
+        const user = 'Juan';
+        user = 'Manolo'; // genera un error ya que user es constante
+        // no se puede reasignar un objeto constante, pero su valor puede cambiar
+        const user2 = { name: 'Juan' };
+        user2.name = 'Manolo';
+        console.log(user2.name); // Manolo
+        // se pueden incluso crear nuevas propiedades al objeto, aunque sea constante
+        const user3 = { name: 'Juan' };
+        user3.surname = 'Padial';
+        console.log(user3); // {name: 'Juan', surname: 'Padial'}
+    </script>
+</body>
+
+</html>

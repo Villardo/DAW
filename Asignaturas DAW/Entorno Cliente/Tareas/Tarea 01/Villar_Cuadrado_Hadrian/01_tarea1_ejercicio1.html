@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Tarea 1. Ejercicio 1.</title>
+</head>
+
+<body>
+    
+    <script>
+        function aleatorio() {
+            return Math.floor(Math.random() * (11 - 1) + 1);
+        }
+
+        function juego() {
+            let gloria1, gloria2, gloria3, gloriaResultado, gloriaFrase;
+            let hector1, hector2, hector3, hectorResultado, hectorFrase;
+            
+            gloria1=aleatorio();
+            gloria2=aleatorio();
+            gloria3=aleatorio();
+            gloriaResultado=gloria1+gloria2+gloria3;
+            gloriaFrase="Gloria ha sacado un "+gloria1 +", un "+gloria2+" y un "+ gloria3+". Suma "+gloriaResultado;
+
+            hector1=aleatorio();
+            hector2=aleatorio();
+            hector3=aleatorio();
+            hectorResultado=hector1+hector2+hector3;
+            hectorFrase="Héctor ha sacado un "+hector1 +", un "+hector2+" y un "+ hector3+". Suma "+hectorResultado;
+
+            console.log("JUEGO DEL QUINCE");
+
+            if (gloriaResultado>15) {
+                console.log(gloriaFrase+". Se ha pasado.");
+            }else{
+                console.log(gloriaFrase+".");
+            }
+            if (hectorResultado>15) {
+                console.log(hectorFrase+". Se ha pasado.");
+            }else{
+                console.log(hectorFrase+".");
+            }
+            if ((gloriaResultado == hectorResultado) && (gloriaResultado < 15) && (hectorResultado < 15)){
+                console.log("Han empatado");
+            }else if ((gloriaResultado < 15) && (hectorResultado > 15)){
+                console.log("Gloria ha ganado");
+            }else if ((hectorResultado < 15) && (gloriaResultado > 15)){
+                console.log("Héctor ha ganado");
+            }else{
+                console.log("No ha ganado nadie");
+            }
+            console.log("---------------------");
+
+        }
+        </script>
+    <button onclick="juego()">Jugar</button>
+</body>
+
+</html>

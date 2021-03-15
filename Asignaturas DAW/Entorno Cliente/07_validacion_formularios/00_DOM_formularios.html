@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formularios en el DOM</title>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form action="procesar.php" method="post" id="miFormulario">
+        Nombre:
+        <input type="text" name="nombre" id="nombre" /><br><br>
+        <button type="submit" id="enviar">Enviar</button>
+    </form>
+
+    <script>
+        // SELECCION DEL FORMULARIO...
+        // ... conociendo el id
+        var formulario = document.getElementById("miFormulario");
+        var formulario2 = document.forms["miFormulario"];
+        // ... conociendo el número de formulario que es en la página
+        var formulario3 = document.getElementsByTagName("form")[0];
+        var formulario4 = document.forms[0];
+
+        // SELECCIÓN de ELEMENTOS DE UN FORMULARIO
+        //.elements[] Devuelve un array con todos los input del formulario
+        //getElementById("idElemento") Devuelve un elemento con un id determinado
+        //getElementsByTagName("etiqueta") Devuelve un array con elementos de un tipo de etiqueta (input, select, etc.)
+        //getElementsByName("nombre") Devuelve un array con elementos que tienen el mismo nombre (por ejemplo, radiobutton).
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Scroll.</title>
+</head>
+
+<body>
+    <script>
+        // Create some content
+        document.body.appendChild(document.createTextNode(
+            "supercalifragilisticoespialidoso ".repeat(1000))); // .repeat(1000) copia la cadena 1000 veces
+
+        window.addEventListener("scroll", () => {
+            console.log("Scroll en la página");
+
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Expresiones Regulares</title>
+
+</head>
+
+<body>
+    <script>
+        // Creación de expresiones regulares
+        // Mediante el constructor de RegExp:
+        let re1 = new RegExp("abc");
+        // a partir de un literal:
+        let re2 = /abc/;
+
+        // RegExp.test() comprueba si una cadena coincide con una expresión regular.
+        console.log(/abc/.test("abcde")); // Devuelve true
+        console.log(/abc/.test("abxde")); // Devuelve false
+
+        // Prueba de fechas
+        let dateTime = /\d\d-\d\d-\d\d\d\d \d\d:\d\d/;
+        console.log(dateTime.test("01-30-2003 15:20")); // Devuelve true
+        console.log(dateTime.test("30-jan-2003 15:20")); // Devuelve false
+
+        // RegExp.exec() devuelve las coincidencias de una expresión regular con una cadena
+        let coincidencia = /\d+/.exec("Uno dos 3");
+        console.log(coincidencia); // devuelve las coincidencias: ["3"]
+        console.log(coincidencia.index); // devuelve el índice de la primera coincidencia: 8
+
+        // String proporciona los métodos match(), search() y replace() que también soportan expresiones regulares
+        // String.match() devuelve las coincidencias de una cadena con una expresión regular
+        console.log("Uno dos 3".match(/\d+/))
+        // String.replace() reemplaza la primera ocurrencia de una cadena en otra
+        console.log("papa".replace("p", "m"));
+        // También reemplaza las coincidencias de una expresión regular
+        console.log("AABBCC".replace(/BB/, "00"));
+
+        // String.search() devuelve el índice de la primera ocurrencia de la expresión regular en la cadena
+        console.log("a ".search(/\s/)); // devuelve 1
+        console.log("     ".search(/\s/)); // devuelve 0
+    </script>
+</body>
+
+</html>

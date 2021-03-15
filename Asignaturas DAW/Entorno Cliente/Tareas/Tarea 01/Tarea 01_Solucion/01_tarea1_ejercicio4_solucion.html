@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 4.</title>
+    <script src="01_objetos.js"></script>
+</head>
+
+<body>
+    <script>
+        document.write("<br><b>Películas publicadas antes del año 2000:</b>");
+        var titulo;
+        for (titulo in movies) {
+            if (movies[titulo].releaseDate < 2000) {
+                document.write("<br>" + titulo);
+            }
+        }
+        document.write("<br>");
+        // Se construye un vector añadiendo los actores de cada película siempre que no esté ya añadido
+        var actores_todos = [];
+        for (titulo in movies) {
+            var actores = movies[titulo].actors;
+            for (var i = 0; i < actores.length; i++) {
+                if (actores_todos.indexOf(actores[i]) < 0) {
+                    actores_todos.push(actores[i]);   
+                }
+            }
+
+        }
+        // Se escriben todos los actores
+        document.write("<br><b>Lista de actores:</b>");
+        for (var i = 0; i < actores_todos.length; i++) {
+            document.write("<br>" + actores_todos[i]);
+        }
+
+        // Se escribe el valor de la propiedad solicitada
+        document.write("<br>");
+        document.write("<br><b>El valor de la propiedad number es:</b>" + myObject["some array"][2].number);
+
+    </script>
+
+</body>
+
+</html>

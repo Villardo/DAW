@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 3.</title>
+</head>
+
+<body>
+    <script>
+        function Libro(tit, aut, pub, lei) {
+            this.titulo = tit;
+            this.autor = aut;
+            this.publicado = pub;
+            this.leido = lei;
+            this.getAntiguedad = function() {
+                var actual = new Date().getFullYear();
+                return actual - pub;
+            }
+        }
+
+        var libro1 = new Libro("Rebelión en la granja","George Orwell",1945,true);
+        var libro2 = new Libro("20 mil leguas de viaje submarino","Julio Verne",1869,false);
+        var libro3 = new Libro("Asesinato en el Orient Express","Agatha Christie",1934,true);
+
+        var libros = [];
+        libros.push(libro1);
+        libros.push(libro2);
+        libros.push(libro3);
+        //Alternativa:
+        //var libros = new Array(libro1, libro2, libro3);
+
+        function comparar(a, b) {
+            let comparacion = 0;
+            if (a.publicado > b.publicado) {
+                comparacion = 1;
+            } else if (a.publicado < b.publicado) {
+                comparacion = -1;
+            }
+            return comparacion;
+        }
+
+        libros.sort(comparar);
+
+        for (var i = 0; i < libros.length; i++) {
+            var cadenaLibro = libros[i].titulo + " escrito por " + libros[i].autor + " (" + libros[i].publicado + ") hace " + libros[i].getAntiguedad() + " años."
+            if (libros[i].leido) {
+                document.write("<br/>Ya he leído " + cadenaLibro);
+            } else document.write("<br/>Todavía no he leído " + cadenaLibro);
+        }
+    </script>
+
+</body>
+
+</html>

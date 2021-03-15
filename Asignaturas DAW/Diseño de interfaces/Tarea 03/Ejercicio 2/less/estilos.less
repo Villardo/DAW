@@ -1,0 +1,30 @@
+// out: ../css/estilos.css, compress: false, sourceMap: false
+
+@colorFondo: #fff;
+@colorTexto: #000;
+@tamanhoTexto: 1.2em;
+
+@colorIconos: rgb(28, 32, 23);
+
+body{
+    background-color: @colorFondo;
+    color: @colorTexto;
+    font-size: @tamanhoTexto;
+}
+
+.fab {
+    color: @colorIconos;
+}
+.fas {
+    color: @colorIconos;
+}
+
+.ulListas{
+    list-style: none;
+}
+
+.enlacePaginas{
+    &:hover {
+        background-color: rgb(53, 196, 9);
+    }
+}

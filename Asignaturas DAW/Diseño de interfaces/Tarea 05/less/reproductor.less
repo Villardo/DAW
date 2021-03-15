@@ -1,0 +1,61 @@
+// out: ../css/reproductor.css, compress: false, sourceMap: false
+
+@color1:rgb(56, 179, 179);
+@color2:rgb(255, 255, 255);
+
+.multimedia { 
+    max-width: 100%; 
+}
+
+#playlist, audio{
+    width:100%;
+    padding:10px;
+    list-style: none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+    color: rgb(85, 85, 85);
+    text-decoration:none;
+}
+
+.active a {
+    color: rgb(9, 24, 224);
+    text-decoration:none;
+}
+
+li a{
+    background-color: @color2;
+    padding:5px;
+    display:block;
+    color: black;
+    &:hover{
+        color: rgb(0, 89, 255);
+        text-decoration:none;
+    }
+}
+
+#video{
+    max-width:100%;
+    width:100%;
+    height: auto;
+}
+
+#multimedia{
+    background-color: @color2;
+    padding-top: 15px;
+}
+
+#contenedordb{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: @color1;
+    #contenedor{
+        background-color: @color1;
+    }
+}
+

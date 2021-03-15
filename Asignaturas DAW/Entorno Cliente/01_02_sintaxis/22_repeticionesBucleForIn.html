@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Repeticiones. Bucle for in</title>
+</head>
+
+<body>
+	<script>
+		/*
+		FOR-IN permite iterar sobre las propiedades de un objeto
+		SINTAXIS:
+		for (<nombre> in <objeto>){
+			//Código que se repite
+		}
+		*/
+
+		//Definimos un objeto animal
+		var animal = { nombre: "Lola", tipo: "Hamster", raza: "Ruso", edad: 1 };
+
+		var propiedad;
+
+		for (propiedad in animal) {
+			alert(animal[propiedad]);
+		}
+	</script>
+</body>
+
+</html>

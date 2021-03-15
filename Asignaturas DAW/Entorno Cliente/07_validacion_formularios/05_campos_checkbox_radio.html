@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Campos checkbox y radio</title>
+</head>
+
+<body>
+    <label>
+        <input type="checkbox" id="purple"> Haz que esta página sea púrpura
+    </label>
+    <br><br>
+    <label>
+        <input type="radio" name="color" value="orange"> Naranja
+    </label>
+    <label>
+        <input type="radio" name="color" value="lightgreen"> Verde
+    </label>
+    <label>
+        <input type="radio" name="color" value="lightblue"> Azul
+    </label>
+
+    <script>
+        let checkbox = document.querySelector("#purple");
+        checkbox.addEventListener("change", () => {
+            document.body.style.background =
+                checkbox.checked ? "mediumpurple" : "";
+        });
+
+        let buttons = document.querySelectorAll("[name=color]");
+        for (let button of Array.from(buttons)) {
+            button.addEventListener("change", () => {
+                document.body.style.background = button.value;
+            });
+        }
+    </script>
+</body>
+
+</html>

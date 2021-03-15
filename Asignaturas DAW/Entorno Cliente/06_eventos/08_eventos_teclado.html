@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Teclado.</title>
+</head>
+
+<body>
+    <p>Esta página se vuelve azul al pulsar la tecla c.</p>
+    <script>
+        window.addEventListener("keydown", event => {
+            if (event.key == "c") {
+                document.body.style.background = "lightskyblue";
+            }
+        });
+        window.addEventListener("keyup", event => {
+            if (event.key == "c") {
+                document.body.style.background = "";
+            }
+        });
+    </script>
+
+    <p>Pulsa Control-8 para avisar en la consola.</p>
+    <script>
+        window.addEventListener("keydown", event => {
+            if (event.key == "8" && event.ctrlKey) {
+                console.log("¡Avisado!");
+            }
+        });
+    </script>
+</body>
+
+</html>

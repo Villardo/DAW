@@ -1,0 +1,394 @@
+/* Página útil donde puedes definir de un método visual los keyframes de las animaciones que quieras */
+/* https://cssanimate.com/ */
+
+#cabecera{
+    background-color: rgb(82, 203, 228);
+    width: 100%;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    float: left;
+    font-size: large;      
+    background:#2980B9;
+}
+
+#tituloCabecera{
+    text-shadow: 2px 2px 5px white;
+}
+
+#identificacion{
+    background-color: rgb(0, 150, 199);
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); 
+}
+
+.button {
+    background-color: #008CBA; 
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#iniciarSesion {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+#iniciarSesion:hover {
+    background-color: rgb(0, 119, 182);
+    color: white;
+}
+
+#busqueda{
+    background-color: rgb(11, 189, 248);
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+    text-align: center;
+    padding-top: 25px;
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); 
+}
+
+#menu{
+    background-color: rgb(0, 150, 199);
+    width: 100%;
+    float: left;
+    position: relative;
+    translate: 30px;
+}
+
+#lateralizquierdo{
+    background-color: rgb(255, 255, 255);
+    width: 33%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+}
+
+    #noticias{
+        background-color: rgb(255, 255, 255);
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+    }
+
+    #enlaces{
+        background-color: rgb(255, 255, 255);
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+    }
+
+    #publicidad{
+        background-color: rgb(255, 255, 255);
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+    }
+
+#central{
+    background-color: rgb(255, 255, 255);
+    width: 34%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+
+}
+
+#lateralderecho{
+    background-color: rgb(255, 255, 255);
+    width: 33%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+}
+
+#pie{
+    background-color: rgb(0, 119, 182);
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    width: 100%;
+    height: 160px;
+    float: left;
+    position: relative;
+}
+
+#imgLupa {
+    width: 15px;
+    height: 15px;
+    padding-left: 15px;    
+}
+
+#imgLupa:hover{
+    transform: scale(2);
+}
+
+#ulmenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(0, 119, 182);
+}
+
+#ulmenu li {
+    float: left;
+}
+
+#ulmenu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#ulmenu li a:hover {
+    background-color:rgb(82, 203, 228);
+}
+
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.graficas {
+    position: relative;
+    width: 50%;
+    align-content: center;
+}
+
+.image {
+    display: block;
+    width: auto;
+    height: 230px;
+}
+
+#imageNoticias{
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.imgEnlace {
+    display: inline;
+    width: 128px;
+    height: 128px;
+    margin-left: 6%;
+    margin-top: 6%;
+}
+
+@keyframes efectoImagenEnlace{
+    0% {
+        transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+        transform:  scaleX(1.30) scaleY(1.30) ;
+    }
+    50% {
+        transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    75% {
+        transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-moz-keyframes efectoImagenEnlace{
+    0% {
+        -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+        -moz-transform:  scaleX(1.30) scaleY(1.30) ;
+    }
+    50% {
+        -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    75% {
+        -moz-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -moz-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-webkit-keyframes efectoImagenEnlace {
+    0% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+        -webkit-transform:  scaleX(1.30) scaleY(1.30) ;
+    }
+    50% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    75% {
+        -webkit-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -webkit-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-o-keyframes efectoImagenEnlace {
+    0% {
+        -o-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+        -o-transform:  scaleX(1.30) scaleY(1.30) ;
+    }
+    50% {
+        -o-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    75% {
+        -o-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -o-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+@-ms-keyframes efectoImagenEnlace {
+    0% {
+        -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    25% {
+        -ms-transform:  scaleX(1.30) scaleY(1.30) ;
+    }
+    50% {
+        -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+    75% {
+        -ms-transform:  scaleX(0.70) scaleY(0.70) ;
+    }
+    100% {
+        -ms-transform:  scaleX(1.00) scaleY(1.00) ;
+    }
+}
+
+.imgEnlace:hover{
+    animation: efectoImagenEnlace linear 4s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: efectoImagenEnlace linear 4s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: efectoImagenEnlace linear 4s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: efectoImagenEnlace linear 4s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: efectoImagenEnlace linear 4s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgb(0, 119, 182);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.graficas:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    white-space: nowrap; 
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.contenedorCard {
+    position: relative;
+    width: 50%;
+}
+
+.imagenCard {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.cajatexto {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.contenedorCard:hover .imagenCard {
+    opacity: 0.3;
+}
+
+.contenedorCard:hover .cajatexto {
+    opacity: 1;
+}
+
+.textoCentral {
+    background-color:  rgb(0, 119, 182);
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+span{
+    color: blue;
+    font-weight: bold;
+}
+

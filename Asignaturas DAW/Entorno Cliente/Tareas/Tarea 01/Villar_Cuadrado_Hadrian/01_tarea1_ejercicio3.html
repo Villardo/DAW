@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tarea 1. Ejercicio 3.</title>
+</head>
+
+<body>
+    <h2>Formulario para agregar un libro</h2>
+
+    <input type="text" id="titulo" placeholder="Título"><br>
+    <input type="text" id="autor" placeholder="Autor"><br>
+    <input type="number" id="fecha" placeholder="Año de publicación"><br>        
+    <input type="radio" id="radio" name="leido" value="Si"> <label for="Si">Leido</label><br>
+    <input type="radio" id="radio" name="leido" value="No"> <label for="No">No leido</label><br><br>
+
+    <button onclick="agregarLibro()">Nuevo libro</button>
+    <button onclick="reset()">Limpiar campos</button><br><br>     
+    <button onclick="crearTabla()">Crear tabla</button>
+    <button onclick="ordenar()">Ordenar por año de publicación</button>
+    <button onclick="mostrar()">Mostrar en texto</button><br><br>
+
+    <table id="tabla"></table>
+    <div id="texto"></div>
+
+    <script>
+
+        let libros=[],propiedades=["Título","Autor","Fecha","Leido"], cont=0;
+
+        let libro1 = new Libro("Cabal","Clive Barker",1988,false);
+        let libro2 = new Libro("En las Montañas de la Locura","H.P. Lovecraft",1936,true);
+        let libro3 = new Libro("Carrie","Stephen King",1974,true);
+
+        function Libro (titulo, autor,fecha,leido){
+            this.titulo = titulo;
+            this.autor = autor;
+            this.fecha = fecha;
+            this.leido = leido;
+        }
+
+        libros.push(libro1);
+        libros.push(libro2);
+        libros.push(libro3);
+
+        function crearTabla() {
+            let tabla = document.createElement('table');
+            tabla.id="tabla"+cont++;
+            tabla.setAttribute('border', '1');
+            tabla.style.marginBottom='10px';
+
+            for (let i = 0; i < propiedades.length; i++) {
+                let tHead = document.createElement('th');
+                tabla.appendChild(tHead);
+                tHead.textContent = propiedades[i];
+            }
+
+            libros.forEach(element => {   
+                let tRow = document.createElement('tr');             
+                for (const atributo in element) {                    
+                    let tData = document.createElement('td');
+                    tData.textContent = element[atributo];
+                    tRow.appendChild(tData);
+                }
+                tabla.appendChild(tRow);
+            });
+            document.body.appendChild(tabla);
+        }
+
+        function reset() {
+            document.getElementById("titulo").value="";
+            document.getElementById("autor").value="";
+            document.getElementById("fecha").value="";            
+            try {
+                document.querySelector('input[name="leido"]:checked').checked = false;                
+            } catch (Exception) {
+                //console.log("Radiobutton es null")
+            }
+            
+        }
+
+        function agregarLibro() {
+            let titulo = document.getElementById("titulo").value;
+            let autor = document.getElementById("autor").value;
+            let fecha = document.getElementById("fecha").value;
+            let leido = document.getElementById("radio").value;
+            if (leido=="Si") {
+                leido=true;
+            }else{
+                leido=false;
+            }
+            let libroNuevo = new Libro(titulo,autor,fecha,leido);
+            libros.push(libroNuevo);
+            reset();           
+        }
+
+        function getAntiguedad(libro) {
+            let hoy = new Date();
+            return antiguedad=hoy.getFullYear()-libro.fecha;
+        }
+
+        function compararFechas(a, b) { 
+            let comp = 0;
+            if (a.fecha > b.fecha) {
+                comp = 1;
+            } else if (a.fecha < b.fecha) {
+                comp = -1;
+            }
+        return comp;
+        }
+
+        function ordenar(){
+            for (let i = 0; i < libros.length; i++) {
+                libros.sort(compararFechas);
+            }
+        }
+
+        function mostrar(){
+            let texto= document.getElementById("texto");
+            for (let i = 0; i < libros.length; i++) {
+                let nuevoTexto = document.createElement('p');
+                if (!libros[i].leido) {                    
+                    nuevoTexto.appendChild(document.createTextNode("Todavía no he leído "+libros[i].titulo+" escrito por "+libros[i].autor+" ("+libros[i].fecha+") hace "+getAntiguedad(libros[i])+" años."));
+                }else{
+                    nuevoTexto.appendChild(document.createTextNode("Ya he leído "+libros[i].titulo+" escrito por "+libros[i].autor+" ("+libros[i].fecha+") hace "+getAntiguedad(libros[i])+" años."));
+                }                 
+                texto.appendChild(nuevoTexto);
+            }             
+            document.body.appendChild(texto);
+        }
+
+    </script>
+</body>
+
+</html>

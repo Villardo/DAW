@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="images/CSS3.png">
+	<title>Sin bootstrap</title>
+</head>
+<body>
+	<!-- Estructura : https://i.imgur.com/MSslJVC.png -->
+	<div id="cabecera">
+		<span id="tituloCabecera">TAREA 02 - DAW Diseño de interfaces - Hadrian Villar Cuadrado - INFORMÁTICA</span>
+		<div id="identificacion">
+			<form class="form-inline" action="#">
+				<label for="usuario">Usuario:</label>
+				<input type="text" id="usuario" placeholder="Usuario" name="usuario">
+				<label for="pass">Contraseña:</label>
+				<input type="password" id="pass" placeholder="Contraseña" name="pass">
+				<label>
+					<input type="checkbox" name="recuerdame"> Recuérdame
+				</label>
+				<button type="submit" class="button" id="iniciarSesion">Iniciar sesión</button>
+			</form>
+		</div>
+		<div id="busqueda">
+			<form action="#">
+				<input type="text" placeholder="Buscar.." name="search" size="40">
+				<input type="image" id="imgLupa" src="images/lupa.png">				
+			</form>
+		</div>
+	</div>
+	<!--  -->
+	<div id="menu">
+		<ul id="ulmenu">
+			<li><a href="#">Lorem ipsum</a></li>
+			<li><a href="#">Phasellus</a></li>
+			<li><a href="#">Gravida </a></li>
+			<li><a href="#">Accumsan</a></li>
+			<li><a href="#">Nec semper</a></li>
+			<li><a href="#">Urna sed</a></li>
+			<li><a href="#">Curabitur tortor</a></li>
+			<li><a href="#">Dolor sit amet</a></li>
+		</ul>
+	</div>
+	<!--  -->
+	<div id="lateralizquierdo">
+		<div id="noticias">
+			<a href="#"><img src="images/amdnews.jpg" id="imageNoticias" class="image" alt="Novedades amd"></a>
+		</div>
+		<div id="enlaces">
+			<a href="#"><img src="images/twitter.png" class="imgEnlace imagenEff"></a>
+			<a href="#"><img src="images/amazon.png" class="imgEnlace imagenEff"></a>
+			<a href="#"><img src="images/instagram.png" class="imgEnlace imagenEff"></a>
+		</div>
+		<div id="publicidad">
+			<a href="#"><img src="images/intelnews.jpg" id="imageNoticias" class="image" alt="Publicidad intel" style="padding-right: 30px;"></a>
+		</div>
+	</div>
+	<!--  -->
+	<div id="central">
+		<div class="contenedorCard" style="width: 100%; ">
+			<img src="images/nvidia_graph.jpg" alt="grafico nvidia" style="width:100%;">
+			<div class="cajatexto">
+				<div class="textoCentral">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet justo in nunc laoreet semper. Quisque eu suscipit augue. Vivamus sit amet efficitur purus. Nam accumsan rutrum felis, ac pellentesque arcu tristique ut. Morbi dignissim vulputate hendrerit. Fusce laoreet sodales ligula eget tincidunt. Suspendisse nibh dolor, feugiat eu cursus nec, fermentum quis urna.<br><span><a href="#">Leer más...</a></span> </div>
+			</div>
+		</div>
+		<div class="contenedorCard" style="width: 100%">
+			<img src="images/intelvsamd.jpg" alt="comparacion" style="width:100%;">
+			<div class="cajatexto">
+				<div class="textoCentral">Volutpat tortor nibh id turpis. Vestibulum purus ex, euismod malesuada porttitor pharetra, vehicula mollis sapien. Morbi fringilla, tellus et molestie semper, sem risus efficitur mauris, eget ultricies massa lacus vel ipsum. Duis condimentum libero non sapien semper elementum. Pellentesque pretium.<br><span><a href="#">Leer más...</a></span> </div>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="lateralderecho">
+		<div class="graficas centrar">
+			<img src="images/rx5070.jpg" alt="5070" class="image">
+			<div class="overlay">
+				<a href="#"><div class="text">RX 5070</div></a>
+			</div>
+		</div>
+		<div class="graficas centrar">
+			<img src="images/gtx1660.jpg" alt="1660" class="image">
+			<div class="overlay">
+				<a href="#"><div class="text">GTX 1660</div></a>
+			</div>
+		</div>
+		<div class="graficas centrar">
+			<img src="images/rtx2060.jpg" alt="2060" class="image">
+			<div class="overlay">
+				<a href="#"><div class="text">RTX 2060</div></a>
+			</div>
+		</div>
+	</div>
+	<!--  -->
+	<div id="pie">
+		<p>Morbi dignissim vulputate</p>
+		<p>Volutpat tortor</p>
+		<p>Lorem ipsum 2020 ©</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 5 - Diseño de interfaces</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reproductor.css">
+    <link rel="icon" type="image/svg" href="https://images.vexels.com/media/users/3/135176/isolated/preview/a6508e565d25ab01f79a35c4319e0083---cono-de-bot--n-de-play-by-vexels.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor" class="row justify-content-center mt-3">
+        
+        <div id="multimedia" class="col-6">
+            <video id="video" controls="controls" autoplay="true" muted="muted">
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4">
+            </video>
+            <ul id="playlist">
+                <li class="active">
+                    <a href="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_2mb.mp4">
+                        (Video desde la web) Desconocido - Sample video 
+                    </a>
+                </li>
+                <li>
+                    <a href="video/A_la_sombra_de_la_sierra_La_Raiz.mp4" type="video/mp4">
+                        (Video desde archivo) La Raíz - A la sombra de la sierra
+                    </a>
+                </li>   
+                <li>
+                    <a href="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3">
+                        (Audio desde la web) T. Schürger - Helix Song 6
+                    </a>
+                </li>            
+                <li>
+                    <a href="audio/La_hoguera_de_los_continentes_La_Raíz.mp3">
+                        (Audio desde archivo) La Raíz - La hoguera de los continentes
+                    </a>
+                </li>  
+            </ul>
+        </div>
+    </div>
+    
+    <br>
+
+    <div id="contenedordb" class="justify-content-center mt-3">
+        <div id="contendorform" class="col-4 justify-content-center mt-3 ml-5">
+            <form>
+                <div class="mr-5">
+                    <div class="form-group row">
+                        <label for="nombre" class="col-sm-2 col-form-label">Tarea: </label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control ml-5" id="nombre_tarea" placeholder="Nombre de la tarea">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="urgencia" class="col-sm-2 col-form-label">Urgencia: </label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control ml-5" id="urgencia" placeholder="Urgencia">
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <section id="zonadatos" class="col-6 justify-content-center">
+            <br>
+            <p>No puedo mostrar los datos precargados porque me da error y solo encontré <a href="https://github.com/jensarps/IDBWrapper/issues/80">esto</a></p>
+            <p>Hay que pulsar 2 veces "Grabar" para que muestrar los datos la 1ª vez</p>
+        </section>
+        <div class="justify-content-left mt-3">
+            <div class="form-group row justify-content-center">
+                <p><input type="button" name="grabar" id="grabar" value="Grabar"></p>
+                <p><input type="button" name="actualizar" id="actualizar" value="Actualizar"></p>
+                <p><input type="button" name="borrar" id="borrar" value="Borrar"></p>
+                <p><input type="button" name="vaciar" id="vaciar" value="VaciarBD"></p>
+                <p><input type="button" name="eliminar" id="eliminar" value="EliminarBD"></p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/reproductor.js"></script>
+<script src="js/funcionesdb.js"></script>
+</html>

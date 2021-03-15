@@ -1,0 +1,318 @@
+#cabecera {
+  background-color: #52cbe4;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+  float: left;
+  font-size: large;
+  background: #2980B9;
+}
+
+#cabecera #tituloCabecera {
+  text-shadow: 2px 2px 5px white;
+}
+
+#cabecera #identificacion {
+  background-color: #0096c7;
+  width: 60%;
+  height: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding-top: 10px;
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+
+#cabecera #identificacion .button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+#cabecera #identificacion #iniciarSesion {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+#cabecera #identificacion #iniciarSesion:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+#cabecera #busqueda {
+  background-color: #0bbdf8;
+  width: 40%;
+  height: 100%;
+  float: left;
+  position: relative;
+  text-align: center;
+  padding-top: 25px;
+  background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+
+#cabecera #busqueda #imgLupa {
+  width: 15px;
+  height: 15px;
+  padding-left: 15px;
+}
+
+#cabecera #busqueda #imgLupa:hover {
+  transform: scale(2);
+}
+
+.image, #lateralizquierdo #noticias, #lateralizquierdo #publicidad {
+  display: block;
+  width: auto;
+  height: 230px;
+}
+
+.margen {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#lateralizquierdo {
+  background-color: white;
+  width: 33%;
+  height: 680px;
+  text-align: left;
+  float: left;
+  position: relative;
+}
+
+#lateralizquierdo #noticias {
+  background-color: white;
+  width: 98%;
+  height: 33%;
+  text-align: left;
+  position: relative;
+  margin: 5px 5px 5px 5px;
+}
+
+#lateralizquierdo #noticias #imageNoticias {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#lateralizquierdo #enlaces {
+  background-color: white;
+  width: 98%;
+  height: 33%;
+  text-align: left;
+  position: relative;
+  margin: 5px 5px 5px 5px;
+}
+
+#lateralizquierdo #enlaces .imgEnlace {
+  display: inline;
+  width: 128px;
+  height: 128px;
+  margin-left: 6%;
+  margin-top: 6%;
+}
+
+#lateralizquierdo #enlaces .imgEnlace:hover {
+  animation: efectoImagenEnlace linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: efectoImagenEnlace linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: efectoImagenEnlace linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: efectoImagenEnlace linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: efectoImagenEnlace linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes efectoImagenEnlace {
+  0% {
+    transform: scaleX(1) scaleY(1);
+  }
+  25% {
+    transform: scaleX(1.3) scaleY(1.3);
+  }
+  50% {
+    transform: scaleX(1) scaleY(1);
+  }
+  75% {
+    transform: scaleX(0.7) scaleY(0.7);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
+
+#lateralizquierdo #publicidad {
+  background-color: white;
+  width: 98%;
+  height: 33%;
+  text-align: left;
+  position: relative;
+  margin: 5px 5px 5px 5px;
+}
+
+#lateralizquierdo #publicidad #imageNoticias {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#central {
+  background-color: white;
+  width: 34%;
+  height: 680px;
+  text-align: left;
+  float: left;
+  position: relative;
+}
+
+#central .contenedorCard {
+  position: relative;
+  width: 50%;
+}
+
+#central .contenedorCard .cajatexto {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#central .contenedorCard .cajatexto:hover {
+  opacity: 1;
+}
+
+#central .contenedorCard .cajatexto .textoCentral {
+  background-color: #0077b6;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+#lateralderecho {
+  background-color: white;
+  width: 33%;
+  height: 680px;
+  text-align: left;
+  float: left;
+  position: relative;
+}
+
+#lateralderecho .graficas {
+  position: relative;
+  width: 50%;
+  align-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#lateralderecho .graficas:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+#lateralderecho .graficas .image, #lateralderecho .graficas #lateralizquierdo #noticias, #lateralizquierdo #lateralderecho .graficas #noticias, #lateralderecho .graficas #lateralizquierdo #publicidad, #lateralizquierdo #lateralderecho .graficas #publicidad {
+  display: block;
+  width: auto;
+  height: 230px;
+}
+
+#lateralderecho .graficas .overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0077b6;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+#lateralderecho .graficas .overlay .text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#menu {
+  background-color: #0096c7;
+  width: 100%;
+  float: left;
+  position: relative;
+  translate: 30px;
+}
+
+#menu #ulmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #0077b6;
+}
+
+#menu #ulmenu li {
+  float: left;
+}
+
+#menu #ulmenu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#menu #ulmenu li a:hover {
+  background-color: #52cbe4;
+}
+
+#pie {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  padding-top: 12px;
+  width: 100%;
+  height: 160px;
+  float: left;
+  position: relative;
+}
+
+body {
+  background-color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+span {
+  color: blue;
+  font-weight: bold;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foco en un campo y campos deshabilitados</title>
+</head>
+
+<body>
+
+    <input type="text" id="txt1"><br><br>
+    <input type="text" id="txt2">
+    <button type="button" id="btnFocus">Poner foco</button>
+    <button type="button" id="btnBlur">Quitar foco</button>
+
+    <script>
+        document.querySelector("input#txt1").disabled = true;
+        document.getElementById("btnFocus").addEventListener("click", ponerFoco);
+        document.getElementById("btnBlur").addEventListener("click", quitarFoco);
+        function ponerFoco() {
+            document.querySelector("input#txt2").focus();
+        }
+        function quitarFoco() {
+            document.querySelector("input#txt2").blur();
+        }
+
+
+    </script>
+</body>
+
+</html>

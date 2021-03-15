@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos. Foco.</title>
+</head>
+
+<body>
+    <p>Nombre: <input type="text" texto-ayuda="Nombre completo"></p>
+    <p>Edad: <input type="text" texto-ayuda="Edad en años"></p>
+    <p id="ayuda"></p>
+
+    <script>
+        let ayuda = document.querySelector("#ayuda");
+        let fields = document.querySelectorAll("input");
+        // for...let permite recorrer un Array
+        for (let field of Array.from(fields)) {
+            field.addEventListener("focus", event => {
+                let text = event.target.getAttribute("texto-ayuda");
+                ayuda.textContent = text;
+            });
+            field.addEventListener("blur", event => {
+                ayuda.textContent = "";
+            });
+        }
+    </script>
+</body>
+
+</html>

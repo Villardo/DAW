@@ -1,0 +1,202 @@
+$color1: rgb(255,255,255);
+
+@mixin animacion{
+	@keyframes efectoImagenEnlace{
+        0% {
+            transform:  scaleX(1.00) scaleY(1.00) ;
+        }
+        25% {
+            transform:  scaleX(1.30) scaleY(1.30) ;
+        }
+        50% {
+            transform:  scaleX(1.00) scaleY(1.00) ;
+        }
+        75% {
+            transform:  scaleX(0.70) scaleY(0.70) ;
+        }
+        100% {
+            transform:  scaleX(1.00) scaleY(1.00) ;
+        }
+    }
+}
+
+.image {
+    display: block;
+    width: auto;
+    height: 230px;
+}
+
+.margen{
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+#lateralizquierdo{
+    background-color: $color1;
+    width: 33%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+
+    #noticias{
+        background-color: $color1;
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+
+        @extend .image;
+
+        #imageNoticias{
+            margin-left: auto;
+            margin-right: 100px;
+        }
+    }
+    
+    #enlaces{
+        background-color: $color1;
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+
+        .imgEnlace {
+            display: inline;
+            width: 128px;
+            height: 128px;
+            margin-left: 6%;
+            margin-top: 6%;
+
+            &:hover{
+                @include animacion;
+
+                animation: efectoImagenEnlace linear 4s;
+                animation-iteration-count: infinite;
+                transform-origin: 50% 50%;
+                -webkit-animation: efectoImagenEnlace linear 4s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-transform-origin: 50% 50%;
+                -moz-animation: efectoImagenEnlace linear 4s;
+                -moz-animation-iteration-count: infinite;
+                -moz-transform-origin: 50% 50%;
+                -o-animation: efectoImagenEnlace linear 4s;
+                -o-animation-iteration-count: infinite;
+                -o-transform-origin: 50% 50%;
+                -ms-animation: efectoImagenEnlace linear 4s;
+                -ms-animation-iteration-count: infinite;
+                -ms-transform-origin: 50% 50%;
+            }
+        }
+        
+    }
+    #publicidad{
+        background-color: $color1;
+        width: 98%;
+        height: 33%;
+        text-align: left;
+        position: relative;
+        margin: 5px 5px 5px 5px;
+
+        @extend .image;
+        
+        #imageNoticias {
+            margin-left: auto;
+            margin-right: 100px;
+        }
+    }
+}
+
+#central{
+    background-color: $color1;
+    width: 34%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+
+    .contenedorCard {
+        position: relative;
+        width: 50%;
+        
+        .cajatexto {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+            &:hover{
+                opacity: 1;
+            }
+
+            .textoCentral {
+                background-color:  rgb(0, 119, 182);
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+        }
+    }
+}
+
+#lateralderecho{
+    background-color: rgb(255, 255, 255);
+    width: 33%;
+    height: 680px;
+    text-align: left;
+    float: left;
+    position: relative;
+
+    .graficas {
+        position: relative;
+        width: 50%;
+        align-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+
+        &:hover{
+            .overlay{
+                bottom: 0;
+                height: 100%;
+            }
+        }
+
+        .image {
+            display: block;
+            width: auto;
+            height: 230px;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            right: 0;
+            background-color: rgb(0, 119, 182);
+            overflow: hidden;
+            width: 100%;
+            height: 0;
+            transition: .5s ease;
+
+            .text {
+                white-space: nowrap; 
+                color: white;
+                font-size: 20px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        }
+    }    
+}
+
