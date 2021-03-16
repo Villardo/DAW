@@ -1,0 +1,9 @@
+.mina{
+    width: 34px;
+    height: 34px;    
+    background-image: url(../images/mina.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+

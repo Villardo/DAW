@@ -1,0 +1,261 @@
+/* OROS */
+
+#Aoros01 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) 0px 0px;
+}
+
+#Aoros02 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -210px 0px;
+}
+
+#Aoros03 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -420px 0px;
+}
+
+#Aoros04 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -628px 0px;
+}
+
+#Aoros05 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -835px 0px;
+}
+
+#Aoros06 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1043px 0px;
+}
+
+#Aoros07 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1250px 0px;
+}
+
+#Aoros10 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1875px 0px;
+}
+
+#Aoros11 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2082px 0px;
+}
+
+#Aoros12 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2290px 0px;
+}
+
+/* COPAS */
+
+#Bcopas01 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) 0px -318px;
+}
+
+#Bcopas02 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -210px -318px;
+}
+
+#Bcopas03 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -420px -318px;
+}
+
+#Bcopas04 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -628px -318px;
+}
+
+#Bcopas05 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -835px -318px;
+}
+
+#Bcopas06 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1043px -318px;
+}
+
+#Bcopas07 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1250px -318px;
+}
+
+#Bcopas10 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1875px -318px;
+}
+
+#Bcopas11 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2082px -318px;
+}
+
+#Bcopas12 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2290px -318px;
+}
+
+/* ESPADAS  */
+
+#Cespadas01 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) 0px -638px;
+}
+
+#Cespadas02 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -210px -638px;
+}
+
+#Cespadas03 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -420px -638px;
+}
+
+#Cespadas04 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -628px -638px;
+}
+
+#Cespadas05 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -835px -638px;
+}
+
+#Cespadas06 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1043px -638px;
+}
+
+#Cespadas07 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1250px -638px;
+}
+
+#Cespadas10 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1875px -638px;
+}
+
+#Cespadas11 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2082px -638px;
+}
+
+#Cespadas12 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2290px -638px;
+}
+
+/* BASTOS  */
+
+#Dbastos01 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) 0px -956px;
+}
+
+#Dbastos02 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -210px -956px;
+}
+
+#Dbastos03 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -420px -956px;
+}
+
+#Dbastos04 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -628px -956px;
+}
+
+#Dbastos05 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -835px -956px;
+}
+
+#Dbastos06 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1043px -956px;
+}
+
+#Dbastos07 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1250px -956px;
+}
+
+#Dbastos10 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -1875px -956px;
+}
+
+#Dbastos11 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2082px -956px;
+}
+
+#Dbastos12 {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -2290px -956px;
+}
+
+/* DORSO */
+
+#dorso {
+  height: 320px;
+  width: 205px;
+  background: url(../images/Baraja_española_completa.png) -210px -1275px;
+}
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
