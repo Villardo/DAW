@@ -1,0 +1,4 @@
+Miguel|$2y$10$E.qaYABPit3iGqGV51GL5uZ67MIzVyfUakRS6WoWgjwrWqAaF9fIS
+Jorge|$2y$10$ocwNO/xTPqaZwcwNHh1NAuF9YMNI3OKiOjawuE5MZ0H/2UIQ6M6Y.
+Brais|$2y$10$YrVnCobLtVKBx1hZwf5eZuT5n9pF3dqGfsskxMp77abnkJnqfyHj.
+empleado1|$2y$10$FBgPByAq9uy3Rh0ynN6Oh.raLY8wgtbggK2nyrxPNRXhdO0RFDIHS

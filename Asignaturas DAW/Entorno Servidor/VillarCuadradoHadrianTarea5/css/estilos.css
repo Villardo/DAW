@@ -1,0 +1,26 @@
+.form_montecastelo {
+  background: #000000; 
+  background: -webkit-linear-gradient(
+    to bottom,
+    #615d5c,
+    #000000
+  ); 
+  background: linear-gradient(
+    to bottom,
+    #686462,
+    #000000
+  ); 
+}
+
+.imagen {
+  width: 40%;
+}
+
+#cont_form{
+  width: 50%;
+}
+
+body  {
+  background-image: url("https://opengameart.org/sites/default/files/bg_space_seamless_1.png");
+  background-color: #cccccc;
+}
